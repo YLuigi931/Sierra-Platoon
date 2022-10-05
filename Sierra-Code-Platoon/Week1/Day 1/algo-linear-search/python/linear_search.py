@@ -26,3 +26,5 @@ def linear_search_global(value_to_find, array_to_search_through):
         return None
     
     return result
+
+print(linear_search_global('a',["b", "a", "n", "a", "n", "a", "s"]))
