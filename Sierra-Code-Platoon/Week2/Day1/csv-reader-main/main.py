@@ -54,9 +54,9 @@ try:
     with open(f"./data/{choice}.csv",newline = '') as csvfile:
         info = csv.reader(csvfile, delimiter = ',', skipinitialspace=True)
         for row in info:
-         print(', '.join(row))
+            print(', '.join(row))
 except Exception as e:
     print(f"Sorry, we don\'t have {choice} here.")    
-    print(e)
+    # print(e) 
 
 
