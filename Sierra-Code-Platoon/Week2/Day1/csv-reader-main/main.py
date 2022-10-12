@@ -54,7 +54,7 @@ try:
     with open(f"./data/{choice}.csv",newline = '') as csvfile:
         info = csv.reader(csvfile, delimiter = ',', skipinitialspace=True)
         for row in info:
-            print(', '.join(row))
+            print(f'{row[0]} is a {row[1]} year old {row[2]}')
 except Exception as e:
     print(f"Sorry, we don\'t have {choice} here.")    
     # print(e) 
