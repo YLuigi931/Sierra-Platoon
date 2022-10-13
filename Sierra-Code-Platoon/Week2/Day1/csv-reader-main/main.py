@@ -13,10 +13,11 @@ def convert_lst(name):
     return lst
     
 
-# filepath = findfile("cats.csv", "/")
-# print(filepath)
+filepath = findfile("cats.csv", "/")
+print(filepath)
 bank = []
 database = {}
+
 
 # file_name = open(filepath, "r")
 # print(file_name.readlines())
