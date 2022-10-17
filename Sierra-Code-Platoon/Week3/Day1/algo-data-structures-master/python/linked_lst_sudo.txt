@@ -1,0 +1,14 @@
+
+
+class Node
+    current value
+    next Node
+
+class Linked lst
+
+
+    methods
+        add
+        get
+        remove
+        
