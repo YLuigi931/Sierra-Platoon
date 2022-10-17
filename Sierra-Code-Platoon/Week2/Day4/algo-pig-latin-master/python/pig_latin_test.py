@@ -2,6 +2,7 @@
 
 from pig_latin import translate
 
+
 print(f"translates a word beginning with a vowel: {translate('apple') == 'appleay'}")
 print(f"translates a word beginning with a consonant: {translate('banana') == 'ananabay'}")
 print(f"translates a word beginning with two consonants: {translate('cherry') == 'errychay'}")
