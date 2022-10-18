@@ -5,7 +5,8 @@ class Node
     next Node
 
 class Linked lst
-
+    make sure to utilize the pointers
+    ex. pointer = self.headNode
 
     methods
         add

@@ -15,7 +15,7 @@ class LinkList:
     self.singly = Node(data)
     self.size = 0
     
-  def add(self, data):
+  def add(self, data):# add to the right of linkedlist
     # write your code to ADD an element to the Linked List
     pointer = self.singly
     more = Node(data)
