@@ -12,7 +12,6 @@ class Bst:
 
   def insert(self, value):
     #This is where you will insert a value into the Binary Search Tree
-    
     pointer = self.head
     if pointer.data == None: # case were head has no value
       pointer.data = value
@@ -34,17 +33,42 @@ class Bst:
                  
     return
   
-  def contains(self, value):
-    # this is where you'll search the BST and return TRUE or FALSE if the value exists in the BST
-    pass
+  def contains(self,value):
+        tree = self.parent
+        bool = self.helper(tree, value)
+        return bool
+    
+  def helper(self, tree, value):
+      pointer = tree
+      found = False
+      if pointer is None:
+          return found
+      if pointer.data == value:
+          found = True
+          return found
+      if(value < pointer.data):
+          bool_left = self.helper(pointer.left, value)
+          if bool_left == True:
+            found = bool_left
+            return found
+      if(value > pointer.data):
+          bool_right = self.helper(pointer.right, value)
+          if bool_right == True:
+            found = bool_right
+            return found
+      return found
+      
 
   def remove(self, value):
     # this is where you will remove a value from the BST
+    if self.contains(value) == False: return
+    
+    
     pass
         
   
-def print_tree(tree):
-  pass
+# def print_tree(tree):
+#   pass
 
 
 
@@ -55,4 +79,5 @@ print(test1.head.left.data)
 test1.insert(12) 
 print(f'{test1.head.right.data}')
 test1.insert(11)
-print(f'{test1.head.right.left.data}') 
+print(f'{test1.head.right.left.data}')
+print(test1.contains(11)) 
