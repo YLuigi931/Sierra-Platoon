@@ -9,7 +9,10 @@ while True:
         school.list_students()
     elif mode == '2':
         student_id = input('Enter student id:')
-        student_string = str(school.find_student_by_id(student_id))
-        print(student_string)
+        student = school.find_student_by_id(student_id)
+        print(str(student))
+    elif mode == '3':  
+        school.add_student(student_data)
     elif mode == '5':
-        break
+        break  
+
