@@ -60,7 +60,7 @@ class LinkList:
     return
     
   def print_lst(self):
-    pointer = self.singly
+    pointer = self.head
     result = 'Head==> '
     
     while(pointer != 0):

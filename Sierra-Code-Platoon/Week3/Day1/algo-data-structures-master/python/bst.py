@@ -15,6 +15,7 @@ class Bst:
     pointer = self.head
     if pointer.data == None: # case were head has no value
       pointer.data = value
+      return
     else:
       more_node = Node()
       more_node.data = value 
@@ -31,7 +32,7 @@ class Bst:
         elif(value < pointer.data):
           pointer = pointer.left
                  
-    return
+      return
   
   def contains(self,value):
         tree = self.parent
@@ -62,7 +63,8 @@ class Bst:
   def remove(self, value):
     # this is where you will remove a value from the BST
     if self.contains(value) == False: return
-    
+    # currently I was thinking of recursion to remove node
+    #then replace either the left or right child with the parent 
     
     pass
         
