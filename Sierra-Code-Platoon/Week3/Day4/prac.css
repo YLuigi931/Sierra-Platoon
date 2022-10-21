@@ -1,0 +1,68 @@
+
+/* Here this rule has the `p` selector selecting all paragraph elements in the document*/
+p{
+    color: bisque;
+    color:burlywood;
+    font-size: 40px;
+    color: rgb(133, 51, 51);
+}
+/* Here this rule has the `p` selector selecting all paragraph elements in the document*/
+p{
+    font-style: italic;
+}
+p,span {
+    color: black;
+}
+
+/* Here this rule has the `h1` selector selecting all h1 elements in the document*/
+h1 {
+    color: goldenrod; 
+}
+
+
+
+#title {
+    animation-delay: 0s;
+    text-decoration: underline;
+    font-family: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
+    color: purple;
+}
+
+.add_border_and_padding {
+    border: 4px solid green;
+    padding: 15px;
+}
+
+.make_everything_violet {
+    color:blueviolet;
+}
+
+.global_styles {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: aqua;
+}
+
+
+#moving_bot {
+    width: 60%;
+    left: 0px;
+    right: 0px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+#moving_bot img{
+    width: 100%;
+    left: 0px;
+    right: 0px;
+}
+
+@keyframes example{
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+
+}
