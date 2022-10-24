@@ -19,3 +19,5 @@ class School:
                 
                 return item
         
+# test1 = School('Prussing')
+# print(test1.list_students())

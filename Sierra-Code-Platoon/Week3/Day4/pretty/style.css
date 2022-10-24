@@ -53,8 +53,23 @@
     active is stated in html file
     css uses :hover adds the flair when hover over
 */
-.navbar ul li a.active,
-.navbar ul li a:hover{
+.navbar ul li a.active1:hover{
+	background: red;
+	border-radius: 2px;
+}
+.navbar ul li a.active2:hover{
+	background: red;
+	border-radius: 2px;
+}
+.navbar ul li  a.active3:hover{
+	background: red;
+	border-radius: 2px;
+}
+.navbar ul li a.active4:hover{
+	background: red;
+	border-radius: 2px;
+}
+.navbar ul li a.active5:hover{
 	background: red;
 	border-radius: 2px;
 }
