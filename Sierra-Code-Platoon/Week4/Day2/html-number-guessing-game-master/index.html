@@ -12,13 +12,30 @@
     <!-- your HTML should go here -->
     <nav>
       <h1>Let's Play the Guessing Number Game!</h1>
-        <form>
+        
+          <p id = info><b>Some Info</b></p>
           <input 
           class="favorite styled"
           type="button"
           onclick="randomNumber()"
-          value="Add to favorites"/>
-        </form>
+          value="guess number"/>
+
+          <input 
+          class="What_Info"
+          type="button"
+          onclick="getInfo()"
+          value="What Info"/>
+
+          <form action="./index.html">
+            <input type="text" placeholder="Type something" id="value">
+            <button type="submit" onclick="ip(value)">submit</button>
+          </form>
+
+          
+          <p id="ip">First portion on text</p>
+          
+          
+
     </nav>
 
 
