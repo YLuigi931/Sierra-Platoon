@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <!-- youcan set the default size of body -->
+    <body style="height: 2000px;">
+        
+        <!-- 'bg-light' decides the color -->
+        <!-- 'navbar' just initiates the object -->
+        <!-- 'navbar-light adds subtle style like fonts and etc' -->
+        <!-- 'navbar-expand-lg' or swap lg with sm allows the expansion -->
+        <!-- 'fixed-top' makes it possible for the navbar to stay while
+                scrolling up and down -->
+        <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
+            <!-- putting the navbar in a container helps center the 
+            navbar -->
+            <div class="container">
+            <!-- 'navbar-brand' makes the label -->
+            <!-- 'mb-0' modifies the margins -->
+            <!-- 'h1' gives bold look -->
+            <!-- 'href="#"' makes the label clickable-->
+            <!-- 'd-line-block' makes it a display in line block -->
+            <!-- 'align-top' alignment -->
+            <a  
+                href="#"
+                class="navbar-brand mb-0 h1">
+                <img
+                    class="d-inline-block align-top" 
+                    src= "./toppng.png"
+                    width="30" height="30" />
+                NavBar
+            </a>
+            <!-- 'data-bs-toggle' data attribute-->
+            <!-- 'data-target' pass in the data calling navbarNav-->
+            <!-- 'aria-controls' ???-->
+            <!-- 'aria-label' shows description when cursor hovers over -->
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >   
+                <!-- inside this line could be a text or a symbol
+                    symbol of toggler icon below-->
+                <span class="navbar-toggler-icon dflex"></span>
+            </button>
+            <!-- make an id for this to be called on -->
+            <div 
+                class="collapse navbar-collapse"
+                id="navbarNav">
+                <!-- making a list -->
+                <ul class="navbar-nav">
+                    <!-- 'nav-item' how to represent content -->
+                    <li class="nav-item active"> 
+                        <!-- adding 'active' class darkens the font -->
+                        <a href="#" class="nav-link active">
+                            Home
+                        </a>
+                    </li>
+                    <!-- 'dropdown' makes the drop down button -->
+                    <li class="nav-item dropdown">
+                        
+                        <a href="#" class="nav-link drodown">
+                            Features
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">
+                            Pricing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+
+.navbar .navbar-nav .nav-link:hover{
+    background-color: aqua;
+    counter-reset: white;
+}
+
