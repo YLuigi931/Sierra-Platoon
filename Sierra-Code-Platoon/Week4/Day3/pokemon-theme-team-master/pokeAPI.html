@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">3
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="./pokeAPI.js"></script>
-    
-    <title>Pokemon ApI Demo</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Who is that Pokemon Demo</title>
 </head>
 <body>
-    <div id></div>
+    <button onclick="roll()">Get Pokemon</button>
+    <form onsubmit="getInput(event)">
+        <input id="pName" placeholder="Name">
+        <button type="" submit>Submit</button>
+    </form>
+    <img id="pokemon_image"/>
+
+    <div>
+        <p id="output"></p>
+    </div>
+
 </body>
 </html>
