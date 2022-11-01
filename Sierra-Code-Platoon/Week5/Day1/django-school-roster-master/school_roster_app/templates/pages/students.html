@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>School Page</title>
+  </head>
+  <body>
+    <h2>Students</h2>
+    
+    <ul>
+        {% for students in school_student_list %}
+            <li> <a href="#" >{{students}} </a></li>
+        {% endfor %}
+    </ul>
+  
+</body>
+</html>

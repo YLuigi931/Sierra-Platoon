@@ -1,0 +1,11 @@
+<head>
+    <title>School Page</title>
+  </head>
+  <body>
+    <h2>Staffs</h2>
+    
+    <ul>
+        {% for staff in school_staffs_list %}
+            <li> <a href="#" >{{staff}} </a></li>
+        {% endfor %}
+    </ul>

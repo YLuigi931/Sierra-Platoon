@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>School Page</title>
+  </head>
+  <body>
+    <h2>{{school_name}} Directory</h2>
+    {% block content %} 
+        
+    {% endblock%}
+    {% comment %} <ul>
+      <li><a href={% url 'list_staff' %}>All Staff</a></li>
+      <li><a href={% url 'list_students' %}>All Student</a></li>
+    </ul> {% endcomment %}
+  </body>
+</html>
