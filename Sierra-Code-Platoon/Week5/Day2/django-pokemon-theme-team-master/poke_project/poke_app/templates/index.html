@@ -1,0 +1,6 @@
+<h2>{{poke_name}}</h2>
+<img src={{poke_img}} alt='poke_img'/>
+
+{% for pokemon in similar_pokemon %}
+    <img src={{pokemon}} alt='similar_poke_img'/>
+{% endfor %}
