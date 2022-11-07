@@ -1,0 +1,97 @@
+
+DATABASES:
+
+    GRUBHUB:
+        orders(
+            id
+            user_id
+            restaurant_id
+            ordered_items_id
+        )
+        restaurants(
+            id
+            restaurant_name
+            restaurant_address
+            restaurant_city
+            restaurant_state
+        )
+        menu items(
+            id
+            item_name
+            item_info
+            item_price
+        )
+        users(
+            id
+            user_name
+            user_address
+            user_city
+            user_state
+        )
+
+    BLUE APRON:
+        users(
+            id
+            plan_id
+            user_name
+            user_address
+            user_city
+            user_state
+            promotion_id
+        )
+        service plans(
+            id
+            serving_size
+            meals_per_week
+            price
+        )
+        recipes(
+            id
+            name_of_recipe
+            cook_time
+            ingredients
+        )
+        promotions(
+            id
+            name
+            deduction
+        )
+        deliveries(
+            id
+            user_id
+            recipe_id
+        )
+
+    INSTAGRAM:
+        users(
+            id
+            name
+            age
+            about
+            follow_id
+            post_id
+            comment_id
+        )
+        posts(
+            id
+            user_id
+            post_time
+            post
+        )
+        comments(
+            id
+            user_id
+            comment_time
+            comment
+        )
+        likes(
+            id
+            user_id
+            post_id
+        )
+        follows(
+            id
+            user_id
+            followers_id(note cannot match user_id)
+            date_followed
+        )
