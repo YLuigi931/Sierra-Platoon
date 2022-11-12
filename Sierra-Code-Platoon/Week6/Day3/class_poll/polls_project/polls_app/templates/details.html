@@ -1,0 +1,27 @@
+{% comment %} This is being called after the question is click {% endcomment %}
+<h1> Details about Question {{question.id}}</h1> 
+
+<h2> {{question.question_text}} </h2>
+
+{% if error_message %}
+    <p><strong> {{error_message}} </strong></p>
+{% endif %}
+
+<form action="{% url 'vote' question.id%}" method = POST>
+    {% csrf_token %}
+    {% comment %} <ul>
+        {% for choice in question.choice_set.all%} {% endcomment %}
+        {% comment %} 24:04 {% endcomment %}
+            {% comment %} <li>  </li> {% endcomment %}
+        {% comment %} {% endfor%} {% endcomment %}
+    {% comment %} </ul> {% endcomment %}
+
+    {% for choice in question.choice_set.all%}
+        
+        <input type="radio" name="choice" id="choice{{choice.id}}"  value="{{choice.id}}">
+        <label for="choice{{choice.id}}"> {{ choice.choice_text }}</label><br>
+        
+    {% endfor%}
+    <button type="submit"> Vote </button>
+
+</form>

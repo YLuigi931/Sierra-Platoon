@@ -1,0 +1,18 @@
+[
+    {
+        "model": "polls_app.choice",
+        "pk": null,
+        "fields": {
+            "choice_text": "Mr. White",
+            "question": 4
+        }
+    },
+    {
+        "model": "polls_app.choice",
+        "pk": null,
+        "fields": {
+            "choice_text": "Zordon",
+            "question": 4
+        }
+    }
+]
