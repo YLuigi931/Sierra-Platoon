@@ -12,6 +12,12 @@ class CSV_Interface:
         self.filename = filename
         self.all_data = self.update_data_from_file()
         
+        
+    
+    def get_data(self):
+        self.update_data_from_file()
+        return self.all_data 
+    
     def update_data_from_file(self):
         """ reads the csv file and update the all_data """
         data = []

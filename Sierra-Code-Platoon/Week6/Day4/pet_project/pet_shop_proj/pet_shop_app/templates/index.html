@@ -1,3 +1,6 @@
+{% extends 'layout.html' %}
+
+{% block body %}
 <h1>Pet Shop Bois</h1>
 
 
@@ -5,6 +8,9 @@
     {%for product in products%}
 
         <li> {{product.name}} </li>
+        
+        <button onclick="addToCart({{product.id}})"> Add to shopping cart </button>
 
     {%endfor%}
 </ul>
+{% endblock body %}

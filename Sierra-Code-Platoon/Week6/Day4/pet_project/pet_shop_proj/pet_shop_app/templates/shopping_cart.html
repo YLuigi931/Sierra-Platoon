@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Shopping Cart</h1>
+
+    <ul>
+        {% for item in cart%}
+            <li> {{item.product.id}} --- {{item.product.name}} | QTY: {{item.quantity}}</li>
+            <img src={{item.product.image_url}}/>
+        {% endfor %}
+    </ul>
+
+{% endblock body %}
