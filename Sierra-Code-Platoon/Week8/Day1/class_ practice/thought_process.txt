@@ -1,4 +1,0 @@
-What we find
-- Navbar (top)
-- Article teaser
-    -it has links to other location
