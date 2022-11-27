@@ -5,6 +5,7 @@ import InputUseAlert from './components/InputUseAlert';
 import InputWith2Fields from './components/InputWith2Fileds';
 import OnAndOff from './components/OnAndOff';
 import InputPrint from './components/InputPrint';
+import ReadAndView from './components/ReadAndView';
 
 
 // import './App.css'
@@ -21,6 +22,7 @@ function App() {
       <InputUseAlert/>
       <InputWith2Fields/>
       <InputPrint/>
+      <ReadAndView/>
     </div>
   )
 }

@@ -1,19 +1,29 @@
 import { useState } from "react"
 
+
 function MyCustomComponent() {
-
+    
     // states
-    const [counter, setCounter] = useState(0)
-    // event handlers
-    const increamentCounter = () =>{
-        setCounter(counter + 1)
-    }
-    // render
+    const[messages, setMessages] = useState([]);
+    
+    function display100Messages(){
 
+        let newMessages = []
+       
+        for(let i=1; i<=100; i++){
+    
+          newMessages.push(<li key={`${i}`}>{`this is message ${i}`}</li>)
+        }
+        
+        return newMessages
+    }
+
+    // render
     return (
         <div>
-            <button id="my-button" onClick={increamentCounter}> Click Me! </button>
-            <p id="my-output"> YOu've clicked the button {counter} times. </p>
+            <ul>
+                {display100Messages()}  
+            </ul>
         </div>
     )
     
