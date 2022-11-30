@@ -20,16 +20,16 @@ Step 4: modify the front-end's vite.config.js
     
 
     Markup : ```javascript
-        * export default defineConfig({
-            // vite uses this as a prefix for href and src URLs
-            base: '/static/',
-            build: {
-                //where vite puts the bundled application
-                outDir:'../server/static',
-                // delete old build when creating new
-                emptyOutDir: true,
-                sourcemap: true,
-            },
-            plugins: [react()]
-            })
-        ```
+                * export default defineConfig({
+                    // vite uses this as a prefix for href and src URLs
+                    base: '/static/',
+                    build: {
+                        //where vite puts the bundled application
+                        outDir:'../server/static',
+                        // delete old build when creating new
+                        emptyOutDir: true,
+                        sourcemap: true,
+                    },
+                    plugins: [react()]
+                    })
+            ```
