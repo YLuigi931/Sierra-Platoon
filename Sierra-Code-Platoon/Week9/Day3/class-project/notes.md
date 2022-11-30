@@ -1,10 +1,12 @@
-Markup : Step 1: create the front-end:
+Step 1: create the front-end:
+        
         * commands
             - 'npm create vite'
                 - add a name for project call it client
                 - pick react and javascript
                 
 Step 2: create the environment
+        
         * commands
             - 'python3 - m venv .venv'
             - and activate 'source .venv/bin/activate'
@@ -13,12 +15,12 @@ Step 2: create the environment
             - add requirements 'pip freeze > requirements.txt'
 
 Step 3: create the project
+        
         * commands
             - 'python3 -m startproject {project_Name}'
 
 Step 4: modify the front-end's vite.config.js
     
-
     Markup : ```javascript
                 * export default defineConfig({
                     // vite uses this as a prefix for href and src URLs
