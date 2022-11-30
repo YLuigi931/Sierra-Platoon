@@ -17,8 +17,9 @@ Step 3: create the project
             - 'python3 -m startproject {project_Name}'
 
 Step 4: modify the front-end's vite.config.js
-        
-    Markup:```javascript
+    
+
+    Markup : ```javascript
         * export default defineConfig({
             // vite uses this as a prefix for href and src URLs
             base: '/static/',
