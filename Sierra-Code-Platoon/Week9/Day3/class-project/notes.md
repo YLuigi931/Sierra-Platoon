@@ -18,8 +18,8 @@ Step 3: create the project
 
 Step 4: modify the front-end's vite.config.js
     
-
-    Markup : ```javascript
+    code()
+    Markup :  `code()`
                 * export default defineConfig({
                     // vite uses this as a prefix for href and src URLs
                     base: '/static/',
@@ -32,4 +32,5 @@ Step 4: modify the front-end's vite.config.js
                     },
                     plugins: [react()]
                     })
-            ```
+    Markup : ```javascript
+         ```   
