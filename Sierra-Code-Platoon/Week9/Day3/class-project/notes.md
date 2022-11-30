@@ -18,6 +18,7 @@ Step 3: create the project
         
         * commands
             - 'python3 -m startproject {project_Name}'
+        - Add static folder in the project folder
 
 Step 4: modify the front-end's vite.config.js
     
@@ -49,5 +50,13 @@ Step 6: make sure to finish build on front-end
         - go to the directory
             * commands
                 - 'npm install'
+                - 'npm run build'
 
-Step 7:
+Step 7: Test
+    
+    - check the static folder if its populated
+    - run the server
+        - go to server directory and type this command
+        * commands
+            - 'python3 manage.py runserver'
+
