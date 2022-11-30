@@ -15,7 +15,9 @@ Step 2: create the environment
 Step 3: create the project
         * commands
             - 'python3 -m startproject {project_Name}'
+
 Step 4: modify the front-end's vite.config.js
+        
         ```javascript
         * export default defineConfig({
             // vite uses this as a prefix for href and src URLs
@@ -23,7 +25,6 @@ Step 4: modify the front-end's vite.config.js
             build: {
                 //where vite puts the bundled application
                 outDir:'../server/static',
-
                 // delete old build when creating new
                 emptyOutDir: true,
                 sourcemap: true,
