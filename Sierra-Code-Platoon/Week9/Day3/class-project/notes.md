@@ -1,4 +1,4 @@
-Step 1: create the front-end:
+Markup : Step 1: create the front-end:
         * commands
             - 'npm create vite'
                 - add a name for project call it client
@@ -33,3 +33,7 @@ Step 4: modify the front-end's vite.config.js
                     plugins: [react()]
                     })
             ```
+Step 5: modify settings.py
+    Markup : ```python
+             STATICFILES_DIRS = [BASE_DIR/'static']
+             ```
