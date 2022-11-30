@@ -33,7 +33,9 @@ Step 4: modify the front-end's vite.config.js
                     plugins: [react()]
                     })
             ```
+
 Step 5: modify settings.py
+    
     Markup : ```python
              STATICFILES_DIRS = [BASE_DIR/'static']
              ```
