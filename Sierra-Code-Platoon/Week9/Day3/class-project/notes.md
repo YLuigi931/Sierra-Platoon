@@ -43,3 +43,11 @@ Step 5: modify settings.py
         - Markup :  ```python
                         STATICFILES_DIRS = [BASE_DIR/'static']
                     ```
+
+Step 6: make sure to finish build on front-end
+        
+        - go to the directory
+            * commands
+                - 'npm install'
+
+Step 7:
