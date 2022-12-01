@@ -61,7 +61,7 @@ python3 -m startproject {project_Name}
 ## Step 6: make sure to finish build on front-end
         
 - go to the directory
-#### commands
+#### commands :fish_cake:
 ```
 npm install
 npm run build
