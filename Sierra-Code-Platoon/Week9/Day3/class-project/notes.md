@@ -1,15 +1,16 @@
-## Step 1: create the front-end:
+# Connecting Django and React :coffee:
+## Step 1: create the front-end :dumpling: 
         
-#### commands
+#### commands :fish_cake:
 ```
 npm create vite
 ```
 - add a name for project call it client
 - pick react and javascript
 
-## Step 2: create the environment
+## Step 2: create the environment :spaghetti:
 
-#### commands
+#### commands :fish_cake:
 ```
 python3 - m venv .venv
 source .venv/bin/activate
@@ -24,16 +25,16 @@ pip freeze
 pip freeze > requirements.txt
 ```
 
-## Step 3: create the project
+## Step 3: create the project :rice_ball:
         
-#### commands
+#### command :fish_cake:
 ```
 python3 -m startproject {project_Name}
 ```
 - cd to project folder
 - Add static folder in the project folder
 
-## Step 4: modify the front-end's vite.config.js
+## Step 4: modify the front-end's vite.config.js :house:
     
 ```javascript
     export default defineConfig({
@@ -50,7 +51,7 @@ python3 -m startproject {project_Name}
         })
 ```
 
-## Step 5: modify settings.py
+## Step 5: modify settings.py :sunrise_over_mountains:
     
 ### Add this under lines 118
     
@@ -58,7 +59,7 @@ python3 -m startproject {project_Name}
     STATICFILES_DIRS = [BASE_DIR/'static']
 ```
 
-## Step 6: make sure to finish build on front-end
+## Step 6: make sure to finish build on front-end :roller_coaster:
         
 - go to the directory
 #### commands :fish_cake:
@@ -67,12 +68,12 @@ npm install
 npm run build
 ```
 
-## Step 7: Test
+## Step 7: Test :biohazard:
     
 - check the static folder if its populated
 - run the server
-    - go to server directory and type this command
-#### commands
+    - go to server directory
+#### command :fish_cake:
 ```
 python3 manage.py runserver
 ```
