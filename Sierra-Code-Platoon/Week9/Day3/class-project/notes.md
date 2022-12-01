@@ -41,9 +41,9 @@ Step 5: modify settings.py
     
     * Add this under lines 118
     
-        - Markup :  ```python
-                        STATICFILES_DIRS = [BASE_DIR/'static']
-                    ```
+```python
+    STATICFILES_DIRS = [BASE_DIR/'static']
+```
 
 Step 6: make sure to finish build on front-end
         
