@@ -1,26 +1,32 @@
 ## Step 1: create the front-end:
         
-### commands
-    - 'npm create vite'
-        - add a name for project call it client
-        - pick react and javascript
-                
-## Step 2: create the environment
-something here[^1].
-### commands
+#### commands
 ```
-python3 - m venv .venv[^1].
+npm create vite
+```
+- add a name for project call it client
+- pick react and javascript
+
+## Step 2: create the environment
+
+#### commands
+```
+python3 - m venv .venv
 source .venv/bin/activate
 pip install django
+```
+#### This command will help check the requirements
+```
 pip freeze
+```
+#### This will create the requirements file
+```
 pip freeze > requirements.txt
 ```
-[^1]: My reference.
-
 
 ## Step 3: create the project
         
-### commands
+#### commands
 ```
 python3 -m startproject {project_Name}
 ```
@@ -55,7 +61,7 @@ python3 -m startproject {project_Name}
 ## Step 6: make sure to finish build on front-end
         
 - go to the directory
-### commands
+#### commands
 ```
 npm install
 npm run build
@@ -66,6 +72,8 @@ npm run build
 - check the static folder if its populated
 - run the server
     - go to server directory and type this command
-    * commands
-        - 'python3 manage.py runserver'
+#### commands
+```
+python3 manage.py runserver
+```
 
