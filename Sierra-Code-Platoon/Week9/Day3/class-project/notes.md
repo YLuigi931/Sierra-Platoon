@@ -6,18 +6,25 @@
         - pick react and javascript
                 
 ## Step 2: create the environment
-        
+something here[^1].
 ### commands
-    - 'python3 - m venv .venv'
-    - and activate 'source .venv/bin/activate'
-    - install django 'pip install django'
-    - check the dependence 'pip freeze'
-    - add requirements 'pip freeze > requirements.txt'
+```
+python3 - m venv .venv[^1].
+source .venv/bin/activate
+pip install django
+pip freeze
+pip freeze > requirements.txt
+```
+[^1]: My reference.
+
 
 ## Step 3: create the project
         
 ### commands
-    - 'python3 -m startproject {project_Name}'
+```
+python3 -m startproject {project_Name}
+```
+- cd to project folder
 - Add static folder in the project folder
 
 ## Step 4: modify the front-end's vite.config.js
