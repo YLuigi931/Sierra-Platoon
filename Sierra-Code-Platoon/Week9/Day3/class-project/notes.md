@@ -78,3 +78,12 @@ npm run build
 python3 manage.py runserver
 ```
 
+<ul class="todo-list">
+  <li>
+     <label class="todo-list__label [todo-list__label_checked]">
+        <input class="todo-list__label__checkmark" type="checkbox" disabled checked />
+        <span class="todo-list__label__description">Foo</span>  
+     </label>
+  </li>
+</ul>
+
