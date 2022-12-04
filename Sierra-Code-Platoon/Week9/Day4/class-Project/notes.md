@@ -20,6 +20,7 @@ TODO:
     - [X] create custom user model from abstract base user
         - example: AUTH_USER_MODEL = 'AppFolderName.AppUser'
     - [X] in settings.py specify user model name
+    - [X] python3 manege.py makemigrate, to test this  
 
     - [ ] set up our static file directory
         - [ ] create static dir
