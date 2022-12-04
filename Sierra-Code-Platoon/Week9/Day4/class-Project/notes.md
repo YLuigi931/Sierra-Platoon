@@ -1,6 +1,14 @@
 
 # Full Stack App Day-4
 
+## good commands
+- python3 manage.py showmigrations {AppFolder}
+- (on the front-end directory) after adding this code in package.json under line 8
+    - "build:watch": "vite build --watch",
+    - type this command in terminal "npm run build:watch"
+    - make sure to move the resources like img in asset folder in src directory
+
+
 ## Implementation / Construction Steps
 
 TODO:
@@ -22,9 +30,10 @@ TODO:
     - [X] in settings.py specify user model name
     - [X] python3 manege.py makemigrate, to test this  
 
-    - [ ] set up our static file directory
-        - [ ] create static dir
-        - [ ] set static dir path in settings.py
-        - [ ] run migrations
+- [X] setup our static file directory
+    - [X] create static dir
+    - [X] set static dir path in settings.py
 
+- [X] Config vite to build react app (client) for django
+    - [X] set build output directory
     
