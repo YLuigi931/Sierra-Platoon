@@ -133,7 +133,7 @@ return(
     <Router>
         <Routes>
             <!-- The routing portion  -->
-            <Route path='' element={}/>
+            <Route path='' element={<SomeComponent/>}/>
             
             
         </Routes>
@@ -161,3 +161,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 - When making a component, a fast way to scafold a component 
     by typing this on the page
     - 'rcfe' then press enter
+
+- On the Apps.jsx if your href refer that has the 
+    same route address as the urls.py it will make a get request
+    to the backend
